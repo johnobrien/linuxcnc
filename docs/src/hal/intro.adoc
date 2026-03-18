@@ -17,8 +17,8 @@ And even for the exact same hardware, there may be different ways to use it, say
 An abstraction was needed to make it easier to configure LinuxCNC for a wide variety of hardware devices.
 At the highest level, it could simply be a way to allow a number of 'building blocks' to be loaded and interconnected to assemble a complex system.
 
-This chapter introduces to that Hardware Abstraction Layer.
-You will see that many of the building blocks are indeed, drivers for hardware devices.
+That abstraction is the Hardware Abstraction Layer (HAL).
+You will see that many of the building blocks in HAL are, indeed, drivers for hardware devices.
 However, HAL can do more than just configure hardware drivers.
 
 == HAL Overview
@@ -29,7 +29,7 @@ The Hardware Abstraction Layer (or with a reference to the link:https://en.wikip
 * provide the infrastructure for the communication with and between the many software and hardware components of the system.
 * optionally process and/or override that information as it flows from component to component.
 
-In itself, this link:https://en.wikipedia.org/wiki/Middleware[Middleware] is agnostic about its application on CNC.
+In itself, this link:https://en.wikipedia.org/wiki/Middleware[middleware] is agnostic about its application on CNC.
 An Internet search, for example, found an astronomical application to control telescopes using LinuxCNC.
 Motors move the telescope into the right position, and it needs to know how to map motor activity with the effect of that positioning with the real world.
 Such a synchronisation of motor positions with real-world positions is reminiscent of what CNC machines need to do, or space craft.
